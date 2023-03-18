@@ -41,7 +41,7 @@ diff -urN store-frontend-initial-state/Gemfile.lock store-frontend-instrumented-
 diff -urN store-frontend-initial-state/app/views/layouts/application.html.erb store-frontend-instrumented-fixed/app/views/layouts/application.html.erb
 --- store-frontend-initial-state/app/views/layouts/application.html.erb	2021-09-10 16:21:30.000000000 -0400
 +++ store-frontend-instrumented-fixed/app/views/layouts/application.html.erb	2021-12-07 16:01:54.000000000 -0500
-@@ -2,6 +2,30 @@
+@@ -2,6 +2,33 @@
  <html>
    <head>
      <title>Sandbox</title>
@@ -89,7 +89,7 @@ diff -urN store-frontend-initial-state/app/views/spree/home/index.html.erb store
 diff -urN store-frontend-initial-state/app/views/spree/layouts/spree_application.html.erb store-frontend-instrumented-fixed/app/views/spree/layouts/spree_application.html.erb
 --- store-frontend-initial-state/app/views/spree/layouts/spree_application.html.erb	2021-08-31 09:59:14.000000000 -0400
 +++ store-frontend-instrumented-fixed/app/views/spree/layouts/spree_application.html.erb	2021-12-07 16:01:54.000000000 -0500
-@@ -5,14 +5,37 @@
+@@ -5,14 +5,40 @@
  <!--[if IE 9 ]>    <html class="ie ie9" lang="<%= I18n.locale %>"> <![endif]-->
  <!--[if gt IE 9]><!--><html lang="<%= I18n.locale %>"><!--<![endif]-->
    <head data-hook="inside_head">
