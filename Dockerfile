@@ -17,7 +17,7 @@ RUN apt-get update && \
 
 # Copy the non-instrumented app and apply the patch
 COPY ./src/store-frontend-initial-state /app
-COPY ./src/instrumented-fixed.patch ./app
+COPY ./src/instrumented-fixed.patch /app
 WORKDIR /app
 RUN patch -t -p1 < instrumented-fixed.patch
 RUN mkdir -p /opt/storedog
